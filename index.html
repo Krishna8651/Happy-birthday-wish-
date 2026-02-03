@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For Someone Special | Unforgettable Birthday</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-content">
+            <div class="heart-loader">
+                <div class="heart-piece"></div>
+                <div class="heart-piece"></div>
+                <div class="heart-piece"></div>
+                <div class="heart-piece"></div>
+            </div>
+            <p class="loading-text">Preparing something magical...</p>
+        </div>
+    </div>
+
+    <!-- Background Elements -->
+    <div class="particles-container" id="particles"></div>
+    <div class="floating-hearts" id="floatingHearts"></div>
+    
+    <!-- Main Container -->
+    <div class="main-container">
+        <!-- Scene 1: Opening -->
+        <section class="scene scene-1 active" id="scene1">
+            <div class="scene-content">
+                <div class="envelope-container" id="envelope">
+                    <div class="envelope">
+                        <div class="envelope-front"></div>
+                        <div class="envelope-back"></div>
+                        <div class="letter">
+                            <h2 class="letter-title">A Special Message</h2>
+                            <p class="letter-text">Click to open your birthday surprise...</p>
+                            <div class="heart-icon">❤️</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="instruction">Click the envelope to begin</div>
+            </div>
+        </section>
+
+        <!-- Scene 2: Main Birthday Wish -->
+        <section class="scene scene-2" id="scene2">
+            <div class="scene-content">
+                <div class="birthday-title animate__animated">
+                    <h1 class="main-title">Happy Birthday</h1>
+                    <h2 class="sub-title">To Someone Amazing</h2>
+                </div>
+                
+                <div class="interactive-container">
+                    <div class="memory-box" id="memoryBox">
+                        <div class="memory-photo"></div>
+                        <div class="memory-text">
+                            <p>Every moment with you is special...</p>
+                        </div>
+                    </div>
+                    
+                    <div class="wish-content">
+                        <div class="typewriter-text" id="typewriter">
+                            <p>Today is your day, and the universe is celebrating you!</p>
+                        </div>
+                        
+                        <div class="name-input-container">
+                            <input type="text" id="nameInput" placeholder="Enter your name...">
+                            <button id="personalizeWish" class="magic-btn">
+                                <i class="fas fa-wand-magic-sparkles"></i> Personalize
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="cake-container">
+                        <div class="cake">
+                            <div class="candle" id="candle1">
+                                <div class="flame"></div>
+                            </div>
+                            <div class="candle" id="candle2">
+                                <div class="flame"></div>
+                            </div>
+                            <div class="candle" id="candle3">
+                                <div class="flame"></div>
+                            </div>
+                            <div class="layer layer-bottom"></div>
+                            <div class="layer layer-middle"></div>
+                            <div class="layer layer-top"></div>
+                            <div class="icing"></div>
+                            <div class="decoration"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="navigation">
+                    <button class="nav-btn" id="prevBtn"><i class="fas fa-arrow-left"></i> Back</button>
+                    <button class="nav-btn" id="nextBtn">Continue <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scene 3: Photo Gallery & Memories -->
+        <section class="scene scene-3" id="scene3">
+            <div class="scene-content">
+                <h2 class="scene-title">Beautiful Memories</h2>
+                <div class="gallery-container">
+                    <div class="photo-frame">
+                        <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1518568814500-bf0f8d125f46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80')">
+                            <div class="photo-overlay">
+                                <h3>Beautiful Moments</h3>
+                                <p>Cherishing every second</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-frame">
+                        <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1511795409834-ef04bbd61622?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80')">
+                            <div class="photo-overlay">
+                                <h3>Happy Times</h3>
+                                <p>Smiles that light up the world</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="photo-frame">
+                        <div class="photo" style="background-image: url('https://images.unsplash.com/photo-1511988617509-a57c8a288659?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1171&q=80')">
+                            <div class="photo-overlay">
+                                <h3>Special Connections</h3>
+                                <p>Bonds that last forever</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="memory-message">
+                    <p class="quote">"The best memories are made celebrating life with those we love."</p>
+                </div>
+                
+                <div class="interactive-stars">
+                    <div class="star-rating">
+                        <span class="star" data-value="1">★</span>
+                        <span class="star" data-value="2">★</span>
+                        <span class="star" data-value="3">★</span>
+                        <span class="star" data-value="4">★</span>
+                        <span class="star" data-value="5">★</span>
+                    </div>
+                    <p class="rating-text">Rate this birthday experience!</p>
+                </div>
+                
+                <div class="navigation">
+                    <button class="nav-btn" id="prevBtn2"><i class="fas fa-arrow-left"></i> Back</button>
+                    <button class="nav-btn" id="nextBtn2">Continue <i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Scene 4: Final Wish & Surprise -->
+        <section class="scene scene-4" id="scene4">
+            <div class="scene-content">
+                <div class="final-wish-container">
+                    <h2 class="final-title">A Final Wish For You</h2>
+                    
+                    <div class="wish-box">
+                        <div class="wish-text" id="finalWish">
+                            May your year be filled with laughter, love, and beautiful surprises. 
+                            May every dream you chase come true, and may you always find happiness 
+                            in the smallest moments. You deserve the world and more.
+                        </div>
+                        
+                        <div class="surprise-box">
+                            <button class="surprise-btn" id="surpriseBtn">
+                                <i class="fas fa-gift"></i> Click for a Surprise!
+                            </button>
+                            <div class="surprise-content" id="surpriseContent"></div>
+                        </div>
+                    </div>
+                    
+                    <div class="birthday-countdown">
+                        <h3>Celebrating you for</h3>
+                        <div class="countdown-timer">
+                            <div class="time-unit">
+                                <span id="days">0</span>
+                                <small>Days</small>
+                            </div>
+                            <div class="time-unit">
+                                <span id="hours">0</span>
+                                <small>Hours</small>
+                            </div>
+                            <div class="time-unit">
+                                <span id="minutes">0</span>
+                                <small>Minutes</small>
+                            </div>
+                            <div class="time-unit">
+                                <span id="seconds">0</span>
+                                <small>Seconds</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="share-love">
+                        <p>Spread the love on your special day!</p>
+                        <div class="social-buttons">
+                            <button class="social-btn" id="shareBtn">
+                                <i class="fas fa-share-alt"></i> Share
+                            </button>
+                            <button class="social-btn" id="loveBtn">
+                                <i class="fas fa-heart"></i> Send Love
+                            </button>
+                            <button class="social-btn" id="replayBtn">
+                                <i class="fas fa-redo"></i> Experience Again
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="navigation">
+                    <button class="nav-btn" id="prevBtn3"><i class="fas fa-arrow-left"></i> Back</button>
+                </div>
+                
+                <div class="credits">
+                    <p>Made with <span class="heart-beat">❤️</span> for your special day</p>
+                    <p class="view-count">This wish has been viewed <span id="viewCount">0</span> times</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="backgroundMusic" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-birthday-happiness-479.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="clickSound" src="https://assets.mixkit.co/sfx/preview/mixkit-select-click-1109.mp3"></audio>
+    <audio id="celebrationSound" src="https://assets.mixkit.co/sfx/preview/mixkit-happy-crowd-laugh-464.mp3"></audio>
+
+    <!-- Music Control -->
+    <div class="music-controls">
+        <button class="music-btn" id="musicToggle">
+            <i class="fas fa-music"></i>
+            <span class="music-text">Music</span>
+        </button>
+        <button class="music-btn" id="soundToggle">
+            <i class="fas fa-volume-up"></i>
+            <span class="music-text">Sound</span>
+        </button>
+    </div>
+
+    <!-- Confetti Container -->
+    <div class="confetti-container" id="confettiContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+                      </html>
